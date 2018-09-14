@@ -3,6 +3,6 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: apiproxy
-  host: wwproxy
+  name: watsonwork-api-proxy
+  host: watsonwork-api-proxy
   disk_quota: 1024M
