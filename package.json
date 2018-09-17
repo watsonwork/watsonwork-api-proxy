@@ -18,9 +18,9 @@
     "npm": ">=3.10.8"
   },
   "dependencies": {
-    "basic-auth": "^1.1.0",
+    "basic-auth": "^2.0.0",
     "http-proxy": "^1.16.2",
-    "jsonwebtoken": "^7.4.0",
+    "jsonwebtoken": "^8.3.0",
     "request": "^2.88.0"
   },
   "semistandard": {
