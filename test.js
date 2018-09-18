@@ -12,9 +12,8 @@ describe('testing proxy', () => {
   after(function () {
     server.close();
   });
-
-  it('graphQL me() ', (done) => {
-    for (let i = 0; i < 2; i++) { // run twice to test caching
+  for (let i = 0; i < 2; i++) { // run twice to test caching
+    it(`graphQL me(), run ${i}`, (done) => {
       request(server)
         .post('/graphql')
         .auth(id, secret)
@@ -22,6 +21,6 @@ describe('testing proxy', () => {
         .set('Content-Type', 'application/graphql')
         .send('query { me { id } }')
         .expect(200, { data: { me: { id: id } } }, done);
-    }
-  });
+    });
+  }
 });
