@@ -21,7 +21,7 @@
     "basic-auth": "^2.0.0",
     "http-proxy": "^1.16.2",
     "jsonwebtoken": "^8.3.0",
-    "request": "^2.88.0"
+    "request": "^2.88.2"
   },
   "semistandard": {
     "env": [
